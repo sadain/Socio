@@ -14,6 +14,7 @@ body {
   width: 0%;
   transition: all 0.3s linear;
 }
+
 .container {
   padding: 0 80px !important;
   width: 100% !important;
@@ -492,11 +493,12 @@ button:focus {
   font-size: 15px;
 }
 
-.section-2 ul.forms-list li:hover{
+.section-2 ul.forms-list li a{
+  text-decoration: none;
+}
+.section-2 ul.forms-list li a:hover{
   -webkit-text-fill-color: #ffd7ad;
 }
-
-
 /*----------------------- Section-3 --------------------*/
 
 .section-3 {

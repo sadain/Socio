@@ -1,4 +1,3 @@
-/* Please ❤ this */
 const indicator = document.querySelector(".scroll-indicator")    
 
 const scroll = () => {
