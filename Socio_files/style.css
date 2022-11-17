@@ -4,6 +4,16 @@ body {
   font-weight: 400;
 }
 
+.scroll-indicator {
+  position: fixed;
+  top: 86px;
+  left: 0;
+  height: 4px;
+  background-color: #ff512f;
+  z-index: 2;
+  width: 0%;
+  transition: all 0.3s linear;
+}
 .container {
   padding: 0 80px !important;
   width: 100% !important;
@@ -451,6 +461,8 @@ button:focus {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 30px;
+  background-color: #041837;
 }
 
 .section-2 ul.forms-list li {
@@ -467,16 +479,21 @@ button:focus {
 }
 
 .section-2 ul.forms-list li h4 {
-  color: #041837;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0;
 }
 
+
 .section-2 ul.forms-list li p {
-  color: #5a6170;
+  color: #ffffff;
   font-weight: 400;
   font-size: 15px;
+}
+
+.section-2 ul.forms-list li:hover{
+  -webkit-text-fill-color: #ffd7ad;
 }
 
 
@@ -1214,6 +1231,7 @@ footer .footer-info .foo-right a:hover {
   .section-2 ul.forms-list {
     display: block;
     margin: 0;
+
   }
 
   header {
