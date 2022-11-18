@@ -364,187 +364,188 @@
 
 
 
-<!---- footer ---->
-<footer>
-    <section class="top-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-logo">
-                        <img src="../assets/img/socio-lgc.png">
-                    </div><!-- footer-logo -->
-                </div><!-- col-4 -->
+    <!---- footer ---->
+    <footer>
+        <section class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="footer-logo">
+                            <img src="../assets/img/socio-lgc.png">
+                        </div><!-- footer-logo -->
+                    </div><!-- col-4 -->
 
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#">Declaration</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                        </ul>
-                    </nav><!-- footer-nav -->
-                </div><!-- col-4 -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#">Declaration</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </nav><!-- footer-nav -->
+                    </div><!-- col-4 -->
 
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="social-icon">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div><!-- social-icon -->
-                </div><!-- col-4 -->
-            </div><!-- row -->
-        </div><!-- containr -->
-    </section><!-- top-footer -->
-    <section class="footer-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 foo-left">
-                    <p>Socio. © 2022. All rights reserved. </p>
-                </div><!-- col-6 -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div><!-- social-icon -->
+                    </div><!-- col-4 -->
+                </div><!-- row -->
+            </div><!-- containr -->
+        </section><!-- top-footer -->
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 foo-left">
+                        <p>Socio. © 2022. All rights reserved. </p>
+                    </div><!-- col-6 -->
 
-                <div class="col-md-6 col-sm-6 col-xs-12 foo-right">
-                    <p>Design & Developed by Team <a href="">TFLEX</a></p>
-                </div><!-- col-6 -->
-            </div><!-- row -->
-        </div><!-- containr -->
-    </section><!-- footer-info -->
-</footer>
+                    <div class="col-md-6 col-sm-6 col-xs-12 foo-right">
+                        <p>Design & Developed by Team <a href="">TFLEX</a></p>
+                    </div><!-- col-6 -->
+                </div><!-- row -->
+            </div><!-- containr -->
+        </section><!-- footer-info -->
+    </footer>
 
-<script>
-    window.onscroll = function () { myFunction() };
+    <script>
+        window.onscroll = function () { myFunction() };
 
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
 
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
         }
-    }
-</script>
+    </script>
 
-<script type="text/javascript">
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml11 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+    <script type="text/javascript">
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-    anime.timeline({ loop: false })
-        .add({
-            targets: '.ml11 .line',
-            scaleY: [0, 1],
-            opacity: [0.5, 1],
-            easing: "easeOutExpo",
-            duration: 700
-        })
-        .add({
-            targets: '.ml11 .line',
-            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-            easing: "easeOutExpo",
-            duration: 700,
-            opacity: 0,
-            delay: 100
-        }).add({
-            targets: '.ml11 .letter',
-            opacity: [0, 1],
-            easing: "easeOutExpo",
-            duration: 600,
-            offset: '-=775',
-            delay: (el, i) => 34 * (i + 1)
-        }).add({
-            targets: '.ml11',
-            opacity: 1,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 1000
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 700
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                opacity: 0,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i + 1)
+            }).add({
+                targets: '.ml11',
+                opacity: 1,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+    <script type="text/javascript">
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml15 .word',
+                scale: [14, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 800,
+                delay: 2000
+            }).add({
+                targets: '.ml15',
+                opacity: 1,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+
+    <script type="text/javascript">
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml12 .letter',
+                translateX: [40, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                delay: 3000,
+                duration: 1200,
+            })
+    </script>
+    <!-- IBM - Cloud -> Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "44f8a8dc-51c8-4c89-a260-9f6ddf9b5362", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "d6a9a31d-b606-4560-babd-a6f7395f2d74", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
         });
-</script>
-<script type="text/javascript">
-    anime.timeline({ loop: false })
-        .add({
-            targets: '.ml15 .word',
-            scale: [14, 1],
-            opacity: [0, 1],
-            easing: "easeOutCirc",
-            duration: 800,
-            delay: 2000
-        }).add({
-            targets: '.ml15',
-            opacity: 1,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 1000
-        });
-</script>
+    </script>
 
-<script type="text/javascript">
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml12');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    <div>
+        <link rel="stylesheet" href="./Socio_files/font-awesome.min.css">
+        <style>
+            div#mic-btn {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+            }
 
-    anime.timeline({ loop: false })
-        .add({
-            targets: '.ml12 .letter',
-            translateX: [40, 0],
-            translateZ: 0,
-            opacity: [0, 1],
-            easing: "easeOutExpo",
-            delay: 3000,
-            duration: 1200,
-        })
-</script>
-<!-- IBM - Cloud -> Watson Assistant -->
-<script>
-    window.watsonAssistantChatOptions = {
-        integrationID: "44f8a8dc-51c8-4c89-a260-9f6ddf9b5362", // The ID of this integration.
-        region: "au-syd", // The region your integration is hosted in.
-        serviceInstanceID: "d6a9a31d-b606-4560-babd-a6f7395f2d74", // The ID of your service instance.
-        onLoad: function (instance) { instance.render(); }
-    };
-    setTimeout(function () {
-        const t = document.createElement('script');
-        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-    });
-</script>
+            div#mic-btn img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 120px !important;
+                height: 120px !important;
+                transform: translate(-50%, -50%);
+                max-width: initial;
+            }
 
-<div>
-    <link rel="stylesheet" href="./Socio_files/font-awesome.min.css">
-    <style>
-        div#mic-btn {
-            position: relative;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-        }
-
-        div#mic-btn img {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 120px !important;
-            height: 120px !important;
-            transform: translate(-50%, -50%);
-            max-width: initial;
-        }
-
-        div#mic-btn i {
-            line-height: 30px;
-            cursor: pointer;
-        }
-    </style>
-    <div class="scroll-indicator"></div>
-    <script src="./assets/js/scroll-indicator.js"></script>
+            div#mic-btn i {
+                line-height: 30px;
+                cursor: pointer;
+            }
+        </style>
+        <div class="scroll-indicator"></div>
+        <script src="./assets/js/scroll-indicator.js"></script>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
 </html>
