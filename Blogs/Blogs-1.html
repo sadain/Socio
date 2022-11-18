@@ -6,31 +6,249 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socio - Blogs</title>
-    <link rel="stylesheet" href="../assets/css/blogs.css">
+    <!-- <link rel="stylesheet" href="../assets/css/blogs.css"> -->
 
-    <link rel="stylesheet" href="./Socio_files/style.css">
-    <link href="./Socio_files/css2" rel="stylesheet">
-    <link rel="stylesheet" href="./Socio_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./Socio_files/font-awesome.min.css">
-    <link rel="stylesheet" href="./Socio_files/owl.carousel.min.css">
-    <link rel="stylesheet" href="./Socio_files/slicknav.css">
+    <link rel="stylesheet" href="../Socio_files/style.css">
+    <link href="../Socio_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="../Socio_files/bootstrap.min.css">
+    <link rel="stylesheet" href="../Socio_files/font-awesome.min.css">
+    <link rel="stylesheet" href="../Socio_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Socio_files/slicknav.css">
 
     <!-- <script type="text/javascript" charset="utf-8" async="" src="./Socio_files/loader.js"></script> -->
-    <script src="./Socio_files/jquery.min.js"></script>
-    <script src="./Socio_files/banner-chat.js"></script>
-    <script src="./Socio_files/anime.min.js"></script>
-    <script src="./Socio_files/bootstrap.min.js"></script>
-    <script src="./Socio_files/owl.carousel.js"></script>
-    <script src="./Socio_files/jquery.slicknav.min.js"></script>
+    <script src="../Socio_files/jquery.min.js"></script>
+    <script src="../Socio_files/banner-chat.js"></script>
+    <script src="../Socio_files/anime.min.js"></script>
+    <script src="../Socio_files/bootstrap.min.js"></script>
+    <script src="../Socio_files/owl.carousel.js"></script>
+    <script src="../Socio_files/jquery.slicknav.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
             $('#menu').slicknav();
         });
     </script>
-    <link rel="stylesheet" data-id="chatbox-css" href="./Socio_files/styles.css">
+    <link rel="stylesheet" data-id="chatbox-css" href="../Socio_files/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="./Socio_files/css2(1)" rel="stylesheet">
+    <link href="../Socio_files/css2(1)" rel="stylesheet">
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: "Roboto", sans-serif;
+        }
+        .content {
+            display: grid;
+            width: 60%;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8em;
+        }
+        .content .poster {
+            width: 100%;
+            height: 350px;
+            display: grid;
+            border-radius: 10px;
+            margin-top: 150px;
+            overflow: hidden;
+            background: center no-repeat url(https://img5.goodfon.ru/wallpaper/nbig/f/af/tsvety-gortenziia-vetka-golubye-fon-razmytie-boke.jpg);
+            position: relative;
+            box-shadow: 0px 4px 100px -3px #00059733;
+        }
+        .content .poster .poster-title {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            width: 40%;
+        }
+        .content .poster .poster-title h1 {
+            font-size: 40px;
+            color: white;
+            font-weight: 300;
+            margin: 20px 0;
+        }
+
+        .content .poster .poster-title .line {
+            background-color: #b4c4c5;
+            width: 100%;
+            height: 1px;
+        }
+
+        .content .poster .poster-title p {
+            color: #b4c4c5;
+            font-size: 12px;
+            line-height: 1.8em;
+        }
+
+        .content .poster .poster-buttons {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            color: white;
+            text-align: center;
+        }
+
+        .content .poster .poster-buttons div {
+            cursor: pointer;
+        }
+
+        .content .poster .poster-buttons div:hover {
+            color: #ccc;
+        }
+
+        .footer {
+            width: 100%;
+            min-height: 150px;
+            margin-top: 100px;
+            padding: 100px 0;
+            background: linear-gradient(0deg, #ffffff 0%, #efefef 100%);
+        }
+
+        .footer .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .info {
+            border-radius: 10px;
+            border: 1px solid #e9e9f6;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 40px auto;
+            background-color: #fdfdfd;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .info .block {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 300;
+            color: #242e47;
+        }
+
+        .info .block .mini-title {
+            font-size: 12px;
+            color: #999999;
+            font-weight: 700;
+        }
+
+        .words {
+            padding: 0 0 0 45px;
+            position: relative;
+        }
+
+        .words p {
+            margin: 20px auto;
+            position: relative;
+            color: #777;
+        }
+
+        .words p .buttons {
+            position: absolute;
+            right: 10px;
+            width: 40px;
+            height: 100px;
+            background-color: #777;
+        }
+
+        .words p .letter {
+            font-size: 100px;
+            position: absolute;
+            top: 15px;
+            left: -45px;
+            color: #8787870f;
+            font-weight: 700;
+        }
+
+        .words .buttons {
+            position: absolute;
+            opacity: 0;
+            top: 0px;
+            right: -30px;
+            font-size: 20px;
+            transition: all 0.3s linear;
+            cursor: pointer;
+        }
+
+        .words:hover .buttons {
+            opacity: 1;
+        }
+
+        .quote {
+            position: relative;
+            padding: 40px 40px 40px 45px;
+            background-color: #fdfdfd;
+            border-radius: 10px;
+            min-height: 140px;
+            font-size: 22px;
+            line-height: 1.5em;
+            font-family: "Times New Roman", Times, serif;
+            color: #777;
+        }
+
+        .quote .letter {
+            font-size: 150px;
+            position: absolute;
+            top: 50px;
+            color: #ebebeb;
+        }
+
+        .quote .author {
+            font-size: 12px;
+        }
+
+        .quote .author::before {
+            content: "";
+            width: 40px;
+            height: 1px;
+        }
+
+        @media (max-width: 700px) {
+            .content {
+                width: 90%;
+            }
+
+            .info {
+                grid-template-columns: repeat(2, 1fr);
+                height: 120px;
+            }
+
+            .content .poster {
+                height: 250px;
+            }
+
+            .content .poster .poster-title h1 {
+                font-size: 25px;
+            }
+
+            .content .poster .poster-title p,
+            .content .poster .poster-title .line {
+                display: none;
+            }
+
+            .quote {
+                font-size: 16px;
+            }
+
+            .quote .letter {
+                left: 0px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -40,11 +258,11 @@
                     class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span
                     class="slicknav_icon-bar"></span></span></a>
         <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-            <li><a href="./index.html" role="menuitem" tabindex="-1">Home</a></li>
-            <li><a href="#" role="menuitem" tabindex="-1">Banking service</a></li>
-            <li><a href="#" role="menuitem" tabindex="-1">Blogs</a></li>
-            <li><a href="#" role="menuitem" tabindex="-1">Features</a></li>
-            <li><a href="#" role="menuitem" tabindex="-1">FAQs</a></li>
+            <li><a href="../index.html" role="menuitem" tabindex="-1">Home</a></li>
+            <li><a href="../banking.html" role="menuitem" tabindex="-1">Banking service</a></li>
+            <li><a href="../Blogs.html" role="menuitem" tabindex="-1">Blogs</a></li>
+            <li><a href="../features.html" role="menuitem" tabindex="-1">Features</a></li>
+            <li><a href="../faq.html" role="menuitem" tabindex="-1">FAQs</a></li>
         </ul>
     </div>
 
@@ -52,58 +270,43 @@
         <div class="container">
             <div class="top-header">
                 <div class="brand-logo">
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <!-- <img class="after" src="./Socio_files/cybot-white.svg"> -->
-                        <img class="after" src="./socio-lgc-white.png">
+                        <img class="after" src="../assets/img/socio-lgc-white.png">
                         <!-- <img class="before" src="./Socio_files/cybot.svg"> -->
-                        <img class="before" src="./socio-lgc.png">
+                        <img class="before" src="../assets/img/socio-lgc.png">
                     </a>
                 </div><!-- rand-logo -->
                 <nav class="main-menu">
                     <ul id="menu">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">Banking service</a></li>
-                        <li><a href="./Blogs.xml">Blogs</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../banking.html">Banking service</a></li>
+                        <li><a href="../Blogs.html">Blogs</a></li>
+                        <li><a href="../features.html">Features</a></li>
+                        <li><a href="../faq.html">FAQs</a></li>
                     </ul>
                 </nav><!-- main-menu -->
                 <div class="buttons">
                     <ul>
-                        <li><a href="./login/login.html" class="signup">Login / Signup</a></li>
+                        <li><a href="../login/login.html" class="signup">Login / Signup</a></li>
                         <!-- <li><a href="#" class="signup">Signup</a></li> -->
                     </ul>
                 </div><!-- buttons -->
             </div><!-- top-header -->
         </div><!-- container -->
     </header>
-    <div class="scroll-indicator"></div>
+    <!-- end header -->
+
 
     <div class="wrapper">
         <div class="content-wrapper">
             <div class="content">
                 <div class="poster">
                     <div class="poster-title">
-                        <h1> Article template </h1>
+                        <h1>Netbanking</h1>
                         <div clasZQWs="line"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate, laboriosam sunt
                             eveniet eius iure, sapiente in maiores quasi saepe quas quisquam obcaecati odio </p>
-                    </div>
-                    <div class="poster-buttons">
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg></div>
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-                            </svg></div>
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                            </svg></div>
                     </div>
                 </div>
                 <!-- <div class="info">
@@ -127,14 +330,11 @@
                 <div class="words">
                     <p>
                         <font class="letter">L</font>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate, laboriosam sunt
-                        eveniet eius iure, sapiente in maiores quasi saepe quas quisquam obcaecati odio exercitationem
-                        rerum, molestias aliquid ipsa excepturi laborum quaerat! Tempora necessitatibus culpa possimus
-                        maiores doloremque ipsa nemo incidunt, eos alias voluptatibus, minima obcaecati vel qui,
-                        repudiandae ullam! Ipsam cupiditate officia molestiae quas praesentium deleniti dolores quia
-                        repellat quasi dolore? Nihil distinctio a adipisci dolorem accusantium cupiditate quibusdam in,
-                        ipsum laudantium minima vero ad atque sequi earum? Debitis dolore neque a odio mollitia harum
-                        blanditiis tempore ea nam? Earum a sed odit consectetur temporibus facere vel, fugit pariatur?
+                        Net banking is also referred to as internet banking. It is an electronic system provided by
+                        banks to their customers that allows them to access financial and non-financial banking services
+                        in minutes. The net banking system eliminates the need to physically visit the bank. Net banking
+                        allows customers to easily access a variety of banking services such as money transfers, the
+                        creation of FDs and RDs, the tracking of transactions, and so on.
                     </p>
                     <p>
                         <font class="letter">D</font>
@@ -154,18 +354,6 @@
                         veritatis. Dolor sit amet, consectetur adipisicing elit. Rem dolorem possimus delectus officia
                         aspernatur rerum repellendus quos necessitatibus sed! Deserunt dolor maxime accusantium.
                     </p>
-                    <div class="buttons">
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg></div>
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-                            </svg></div>
-                    </div>
                 </div>
                 <div class="quote">
                     <p>
@@ -173,7 +361,6 @@
                         Nothing could be worse than the fear that one had given up too soon, and left one unexpended
                         effort that might have saved the world.
                     </p>
-                    <p class="author">Jane Addams</p>
                 </div>
                 <div class="words">
                     <p>
@@ -185,50 +372,198 @@
                         veritatis. Dolor sit amet, consectetur adipisicing elit. Rem dolorem possimus delectus officia
                         aspernatur rerum repellendus quos necessitatibus sed! Deserunt dolor maxime accusantium,
                     </p>
-                    <div class="buttons">
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg></div>
-                        <div><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-                            </svg></div>
-                    </div>
                 </div>
                 <div class="author">
                     <div class="image"></div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="content">
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate, laboriosam sunt eveniet
-                    eius iure, sapiente in maiores quasi saepe quas quisquam obcaecati odio exercitationem rerum,
-                    molestias aliquid ipsa excepturi laborum quaerat! Tempora necessitatibus</div>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate, laboriosam sunt eveniet
-                    eius iure, sapiente in maiores quasi saepe quas quisquam obcaecati odio exercitationem rerum,
-                    molestias aliquid ipsa excepturi laborum quaerat! Tempora necessitatibus</div>
-            </div>
-        </div>
     </div>
 
+
+
+    <!---- footer ---->
+    <footer>
+        <section class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="footer-logo">
+                            <img src="../assets/img/socio-lgc.png">
+                        </div><!-- footer-logo -->
+                    </div><!-- col-4 -->
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#">Declaration</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </nav><!-- footer-nav -->
+                    </div><!-- col-4 -->
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div><!-- social-icon -->
+                    </div><!-- col-4 -->
+                </div><!-- row -->
+            </div><!-- containr -->
+        </section><!-- top-footer -->
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 foo-left">
+                        <p>Socio. © 2022. All rights reserved. </p>
+                    </div><!-- col-6 -->
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 foo-right">
+                        <p>Design & Developed by Team <a href="">TFLEX</a></p>
+                    </div><!-- col-6 -->
+                </div><!-- row -->
+            </div><!-- containr -->
+        </section><!-- footer-info -->
+    </footer>
+
     <script>
-        const indicator = document.querySelector(".scroll-indicator")
+        window.onscroll = function () { myFunction() };
 
-        const scroll = () => {
-            const height = document.documentElement.offsetHeight
-            const mx = document.documentElement.scrollHeight - document.documentElement.clientHeight
-            const perc = document.documentElement.scrollTop * 100 / mx
-            indicator.style.width = perc + "%"
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
         }
-
-        document.addEventListener("scroll", scroll)
     </script>
+
+    <script type="text/javascript">
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 700
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                opacity: 0,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i + 1)
+            }).add({
+                targets: '.ml11',
+                opacity: 1,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+    <script type="text/javascript">
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml15 .word',
+                scale: [14, 1],
+                opacity: [0, 1],
+                easing: "easeOutCirc",
+                duration: 800,
+                delay: 2000
+            }).add({
+                targets: '.ml15',
+                opacity: 1,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+
+    <script type="text/javascript">
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml12 .letter',
+                translateX: [40, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                delay: 3000,
+                duration: 1200,
+            })
+    </script>
+    <!-- IBM - Cloud -> Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "44f8a8dc-51c8-4c89-a260-9f6ddf9b5362", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "d6a9a31d-b606-4560-babd-a6f7395f2d74", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+    <div>
+        <link rel="stylesheet" href="./Socio_files/font-awesome.min.css">
+        <style>
+            div#mic-btn {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+            }
+
+            div#mic-btn img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 120px !important;
+                height: 120px !important;
+                transform: translate(-50%, -50%);
+                max-width: initial;
+            }
+
+            div#mic-btn i {
+                line-height: 30px;
+                cursor: pointer;
+            }
+        </style>
+        <div class="scroll-indicator"></div>
+        <script src="./assets/js/scroll-indicator.js"></script>
 </body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
 </html>
