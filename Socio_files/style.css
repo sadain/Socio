@@ -477,6 +477,7 @@ button:focus {
 
 .section-2 ul.forms-list li .forms-img img {
   width: 100%;
+  border-radius: 30px;
 }
 
 .section-2 ul.forms-list li h4 {
