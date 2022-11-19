@@ -554,8 +554,9 @@ button:focus {
 
 .section-4 {
   position: absolute;
-  top: 328px;
+  top: 380px;
   width: 100%;
+  background-color: antiquewhite;
 }
 
 .section-4 .cases-carousel {
